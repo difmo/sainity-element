@@ -43,12 +43,10 @@ export const careerType = defineType({
     defineField({
       name: 'resume',
       title: 'Resume',
-      type: 'file',
-      options: {
-        accept: '.pdf,.doc,.docx', // Limit file types to commonly used resume formats
-      },
-      description: 'Upload resume in PDF, DOC, or DOCX format',
+      type: 'string', // Change this to string instead of file
+      description: 'Provide a link to your resume',
     }),
+    
 
     // Cover Letter / Message Field
     defineField({
