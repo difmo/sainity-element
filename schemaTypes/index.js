@@ -3,12 +3,16 @@ import { authorType } from './authorType';
 import { blockContentType } from './blockContentType';
 import { postType } from './postType';
 import { careerType } from './categoryType';
+import { serviceType } from './serviceType';
+import { solutionType } from './solutionsType';
 
 export const schemaTypes = [
+  serviceType,
   authorType,
   blockContentType,
   postType,
   careerType,
+  solutionType,
 ];
 
 
