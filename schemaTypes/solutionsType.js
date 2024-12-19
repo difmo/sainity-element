@@ -1,5 +1,5 @@
 import { ClipboardIcon } from '@sanity/icons'; // You can replace with a suitable icon
-import { defineArrayMember, defineField, defineType } from 'sanity';
+import { defineField, defineType } from 'sanity';
 
 export const solutionType = defineType({
   name: 'solution',
@@ -25,16 +25,9 @@ export const solutionType = defineType({
     defineField({
       name: 'description',
       title: 'Solution Description',
-      type: 'array',
-      of: [
-        defineArrayMember({
-          type: 'block',
-          styles: [{ title: 'Normal', value: 'normal' }],
-          lists: [], // Add custom lists if needed
-        }),
-      ],
+      type: 'string', // Changed from 'array' to 'string'
       validation: (Rule) =>
-        Rule.required().min(1).error('A description is required'), // Optional validation
+        Rule.required().min(10).error('A description with at least 10 characters is required'), // Optional validation
     }),
   ],
   preview: {
@@ -44,3 +37,4 @@ export const solutionType = defineType({
     },
   },
 });
+

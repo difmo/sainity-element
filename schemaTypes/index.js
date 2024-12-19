@@ -5,6 +5,8 @@ import { postType } from './postType';
 import { careerType } from './categoryType';
 import { serviceType } from './serviceType';
 import { solutionType } from './solutionsType';
+import { successStoryType } from './successStoryType';
+import { servicesType } from './ourservicesType';
 
 export const schemaTypes = [
   serviceType,
@@ -13,6 +15,9 @@ export const schemaTypes = [
   postType,
   careerType,
   solutionType,
+  successStoryType,
+  servicesType,
+  
 ];
 
 
