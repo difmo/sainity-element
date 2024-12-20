@@ -6,7 +6,6 @@ import {schemaTypes} from './schemaTypes/'
 export default defineConfig({
   name: 'default',
   title: 'element',
-
   projectId: 'bc0n4wex',
   dataset: 'element',
 
