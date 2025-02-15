@@ -8,7 +8,7 @@ export const postType = defineType({
   icon: DocumentTextIcon,
   fields: [
     defineField({
-      name: 'name', 
+      name: 'name',
       type: 'string',
     }),
     defineField({
@@ -16,16 +16,36 @@ export const postType = defineType({
       type: 'string',
     }),
     defineField({
-      name: 'message',
+      name: 'countryCode',
       type: 'string',
     }),
-    
     defineField({
       name: 'phone',
       type: 'string',
-     
     }),
-  
+    defineField({
+      name: 'company',
+      type: 'string',
+    }),
+    defineField({
+      name: 'hearAbout',
+      type: 'string',
+    }),
+    defineField({
+      name: 'division',
+      type: 'string',
+    }),
+    defineField({
+      name: 'opportunity',
+      type: 'string',
+    }),
+
+    defineField({
+      name: 'file',
+      title: 'File',
+      type: 'string', // Change this to string instead of file
+      description: 'Provide a link to your resume',
+    }),
   ],
   preview: {
     select: {
@@ -38,4 +58,4 @@ export const postType = defineType({
       return {...selection, subtitle: author && `by ${author}`}
     },
   },
-})
+}) 
